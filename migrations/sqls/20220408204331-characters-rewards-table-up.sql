@@ -1,7 +1,10 @@
 CREATE TABLE IF NOT EXISTS characters_rewards (
-  player_id INT FOREIGN KEY REFERENCES player(id) ON DELETE CASCADE,
-  character_name VARCHAR(100) FOREIGN KEY REFERENCES character(name) ON DELETE CASCADE,
-  reward_id INT FOREIGN KEY REFERENCES reward(id) ON DELETE CASCADE,
+  player_id INT NOT NULL,
+  character_name VARCHAR(100) NOT NULL,
+  reward_id INT NOT NULL,
   status ENUM('Claimed', 'Unclaimed') DEFAULT 'Unclaimed',
+  FOREIGN KEY (player_id) REFERENCES player(id) ON DELETE CASCADE,
+  FOREIGN KEY (character_name) REFERENCES `character`(name) ON DELETE CASCADE,
+  FOREIGN KEY (reward_id) REFERENCES reward(id) ON DELETE CASCADE,
   PRIMARY KEY(player_id, character_name, reward_id)
 );
