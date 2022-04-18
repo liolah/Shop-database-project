@@ -1,5 +1,5 @@
 INSERT INTO
-  characters_items (player_id, charcter_name, item_id, quantity)
+  characters_items (player_id, character_name, item_id, quantity)
 VALUES
   ('1', 'Mark', 1, 2),
   ('2', 'Tim', 1, 3),
@@ -16,7 +16,7 @@ VALUES
   ('5', 'Franky', 8, 4),
   ('5', 'Levw', 9, 8),
   ('1', 'Mark', 10, 7),
-  ('2', 'Tim', 1, 4),
+  ('2', 'Tim', 6, 4),
   ('3', 'Alpha', 2, 2),
   ('4', 'Mark3', 5, 9),
   ('5', 'James', 7, 10),

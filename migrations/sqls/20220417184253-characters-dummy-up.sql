@@ -1,5 +1,5 @@
 INSERT INTO
-  charcter (player_id, name, exp, gold_amount)
+  `character` (player_id, name, exp, gold_amount)
 VALUES
   ('1', 'Mark', 5000, 3000),
   ('2', 'Tim', 4000, 5000),

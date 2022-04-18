@@ -1,7 +1,7 @@
 INSERT INTO
-  characters_rewards (player_id, charcter_name, reward_id, status)
+  characters_rewards (player_id, character_name, reward_id, status)
 VALUES
-  ('1', 'Mark', 1, 'Claimed'),
+  ('1', 'Mark', 3, 'Claimed'),
   ('2', 'Tim', 2, 'Unclaimed'),
   ('3', 'Alpha', 3, 'Claimed'),
   ('4', 'Mark3', 2, 'Claimed'),
