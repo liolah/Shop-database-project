@@ -1,0 +1,28 @@
+INSERT INTO
+  characters_items (player_id, charcter_name, item_id, quantity)
+VALUES
+  ('1', 'Mark', 1, 2),
+  ('2', 'Tim', 1, 3),
+  ('3', 'Alpha', 1, 5),
+  ('4', 'Mark3', 2, 4),
+  ('5', 'James', 3, 7),
+  ('6', 'Grim reaper 27', 4, 15),
+  ('7', 'Ice shard', 1, 3),
+  ('1', 'Moon knight 3000', 1, 3),
+  ('2', 'Brand', 3, 4),
+  ('4', 'Loki', 5, 6),
+  ('4', 'Ahri', 6, 5),
+  ('5', 'Zeke', 7, 4),
+  ('5', 'Franky', 8, 4),
+  ('5', 'Levw', 9, 8),
+  ('1', 'Mark', 10, 7),
+  ('2', 'Tim', 1, 4),
+  ('3', 'Alpha', 2, 2),
+  ('4', 'Mark3', 5, 9),
+  ('5', 'James', 7, 10),
+  ('6', 'Grim reaper 27', 7, 12),
+  ('7', 'Ice shard', 7, 9),
+  ('4', 'Ahri', 1, 7),
+  ('5', 'Zeke', 9, 3),
+  ('5', 'Franky', 9, 4),
+  ('5', 'Levw', 7, 7);

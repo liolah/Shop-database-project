@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS player (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password_digest TEXT NOT NULL,
+  start_date DATETIME DEFAULT NOW()
+);
