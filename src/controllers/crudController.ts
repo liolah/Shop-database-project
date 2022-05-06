@@ -141,3 +141,21 @@ export default {
   selectRewardsItems,
   executeQuery,
 };
+
+export {
+  createPlayer,
+  createCharacter,
+  createItem,
+  createReward,
+  createCharacterItem,
+  createCharacterReward,
+  createRewardItem,
+  selectPlayers,
+  selectCharacters,
+  selectItems,
+  selectRewards,
+  selectCharactersItems,
+  selectCharactersRewards,
+  selectRewardsItems,
+  executeQuery,
+};

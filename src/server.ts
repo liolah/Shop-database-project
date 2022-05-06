@@ -4,7 +4,7 @@ import client from './config/client';
 
 const app: express.Application = express();
 const port = 3000;
-const address: string = `127.0.0.1:${port}`;
+const address: string = `http://127.0.0.1:${port}`;
 
 app.use(express.json());
 app.use('/', routes);
