@@ -4,7 +4,8 @@ import forms from './apis/forms';
 
 const routes = Router();
 
-routes.use('/users');
+routes.use('/', crud);
+routes.use('/', forms);
 
 
 export default routes;
