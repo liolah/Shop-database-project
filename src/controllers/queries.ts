@@ -29,7 +29,7 @@ where
     from
       characters_items
     where
-      character_name = ${name}
+      character_name = '${name}'
   );`,
   acquirableItems: (name: string) => `SELECT
   name as \`Item name\`
@@ -42,7 +42,7 @@ where
     from
       \`character\`
     where
-      \`character\`.name = ${name}
+      \`character\`.name = '${name}'
   )
   and unlock_level <= (
     (
@@ -51,7 +51,7 @@ where
       from
         \`character\`
       where
-        \`character\`.name = ${name}
+        \`character\`.name = '${name}'
     ) / 1000
   );`,
   charactersItemsRank: (itemsNumber?: number) => `SELECT
