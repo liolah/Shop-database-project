@@ -1,15 +1,15 @@
-import express, { Request, Response } from 'express';
+import express, { Request, Response, Application } from 'express';
 import routes from './routes/index';
 import client from './config/client';
 import cors from 'cors';
 
-const app: express.Application = express();
+const app: Application = express();
 const port = 5000;
 const address: string = `http://localhost:${port}`;
 
-app.use(express.json());
-app.use('/', routes);
 app.use(cors());
+app.use(express.json());
+app.use(routes);
 
 app.get('/', function (req: Request, res: Response) {
   res.send('Welcome to the API!');

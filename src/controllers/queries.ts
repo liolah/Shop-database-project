@@ -32,7 +32,9 @@ where
       character_name = '${name}'
   );`,
   acquirableItems: (name: string) => `SELECT
-  name as \`Item name\`
+  name as \`Item name\`,
+  buy_price as \`Item price\`,
+  unlock_level as \`Item level\`
 from
   item
 where
